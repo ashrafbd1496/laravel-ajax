@@ -64,3 +64,8 @@ input[type="submit"]  {
     border: 10px solid #fff;
 
 }
+form img#student_photo_preview{
+    display: block;
+    width: 200px;
+
+}

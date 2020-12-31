@@ -34,9 +34,9 @@
 					<tbody>
 						<tr>
 							<td>1</td>
-							<td>Asraful Haque</td>
-							<td>haq@gmail.com</td>
-							<td>01717700811</td>
+							<td>Asraful Uddin</td>
+							<td>ashraf@gmail.com</td>
+							<td>01558917333</td>
 							<td><img src="{{asset('assets/media/img/avatar.jpg')}}" alt=""></td>
 							<td>
 								<a class="btn btn-sm btn-info" href="#">View</a>
@@ -80,6 +80,7 @@
                             <input class="form-control" type="text">
                         </div>
                         <div class="form-group">
+                            <img id="student_photo_preview"  src=""  alt="">
                             <input style="display: none;" class="form-control" type="file" id="student_photo">
                             <label style="font-size: 20px;cursor: pointer" for="student_photo"><i class="fa fa-camera"></i>
                             </label>
