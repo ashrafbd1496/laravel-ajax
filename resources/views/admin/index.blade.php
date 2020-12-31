@@ -6,6 +6,7 @@
 	<!-- ALL CSS FILES  -->
 	<link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
+	<link rel="stylesheet" href="{{asset('assets/css/datatables.min.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/css/responsive.css')}}">
 </head>
@@ -20,7 +21,7 @@
 		<div class="card shadow">
 			<div class="card-body">
 				<h2>All Data</h2>
-				<table class="table table-striped">
+				<table class="table table-striped" id="myTable">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -107,6 +108,7 @@
 	<script src="{{asset('assets/js/jquery-3.4.1.min.js')}}"></script>
 	<script src="{{asset('assets/js/popper.min.js')}}"></script>
 	<script src="{{'assets/js/bootstrap.min.js'}}"></script>
+	<script src="{{'assets/js/datatables.min.js'}}"></script>
 	<script src="{{asset('assets/js/custom.js')}}"></script>
 </body>
 </html>

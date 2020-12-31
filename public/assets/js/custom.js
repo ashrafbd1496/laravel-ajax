@@ -10,5 +10,13 @@
           $('img#student_photo_preview').attr('src',file_url);
 
         });
+
+        /*
+            Datatables jquery plugin activation
+         */
+        $('#myTable').DataTable();
+
+
+
     });
 })(jQuery)
