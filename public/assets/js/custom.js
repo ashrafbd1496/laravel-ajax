@@ -17,22 +17,6 @@
         $('#myTable').DataTable();
 
 
-        /**
-         * Function to show all data/Student
-         */
-
-        function allStudent(){
-            $.ajax({
-                url:'student-all',
-                success:function (data){
-                    $('tbody#student_tbody').html(data);
-                }
-
-            });
-        }
-        allStudent();
-
-
 
 
         //Add New Student
