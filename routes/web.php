@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('/student', [App\Http\Controllers\StudentController::class, 'index'])->name('index');
 Route::post('/student-create', [App\Http\Controllers\StudentController::class, 'store'])->name('student.create');
+Route::get('/student-all', [App\Http\Controllers\StudentController::class, 'allStudent']);

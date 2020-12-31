@@ -99,4 +99,35 @@ class StudentController extends Controller
     {
         //
     }
+
+    public function allStudent(){
+
+       $all_data = Student::all();
+        $i =1;
+        foreach ($all_data as $data){
+
+            ?>
+
+            <tr>
+                <td><?php echo $i; $i++; ?></td>
+                <td><?php echo $data ->name ?></td>
+                <td><?php echo $data ->roll ?></td>
+                <td><?php echo $data ->email ?></td>
+                <td><?php echo $data ->cell ?></td>
+                <td><img src="media/students/<?php echo $data ->photo ?>" alt=""></td>
+                <td>
+                    <a class="btn btn-sm btn-info" href="#">View</a>
+                    <a class="btn btn-sm btn-warning" href="#">Edit</a>
+                    <a class="btn btn-sm btn-danger" href="#">Delete</a>
+                </td>
+            </tr>
+
+            <?php
+
+
+        }
+    }
+
+
+
 }

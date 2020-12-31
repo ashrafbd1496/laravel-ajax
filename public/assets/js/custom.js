@@ -16,6 +16,25 @@
          */
         $('#myTable').DataTable();
 
+
+        /**
+         * Function to show all data/Student
+         */
+
+        function allStudent(){
+            $.ajax({
+                url:'student-all',
+                success:function (data){
+                    $('tbody#student_tbody').html(data);
+                }
+
+            });
+        }
+        allStudent();
+
+
+
+
         //Add New Student
         $(document).on('submit','form#add_student_form',function (e){
             e.preventDefault();
@@ -48,6 +67,7 @@
                         $('.mess').html('<p class="alert alert-success">Student Added Successful <button class="close" data-dismiss = "alert">&times;</button></p>')
                         $('form#add_student_form')[0].reset();
                         $('img#student_photo_preview').attr('src','');
+                        allStudent();
                     }
 
 

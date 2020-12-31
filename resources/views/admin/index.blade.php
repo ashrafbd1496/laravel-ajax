@@ -24,27 +24,17 @@
 				<table class="table table-striped" id="myTable">
 					<thead>
 						<tr>
-							<th>#</th>
+							<th>Id</th>
 							<th>Name</th>
+							<th>Roll</th>
 							<th>Email</th>
 							<th>Cell</th>
 							<th>Photo</th>
 							<th>Action</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td>1</td>
-							<td>Asraful Uddin</td>
-							<td>ashraf@gmail.com</td>
-							<td>01558917333</td>
-							<td><img src="{{asset('assets/media/img/avatar.jpg')}}" alt=""></td>
-							<td>
-								<a class="btn btn-sm btn-info" href="#">View</a>
-								<a class="btn btn-sm btn-warning" href="#">Edit</a>
-								<a class="btn btn-sm btn-danger" href="#">Delete</a>
-							</td>
-						</tr>
+					<tbody id="student_tbody">
+
 
 
 					</tbody>
