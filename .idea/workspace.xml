@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d9c16249-6607-43c4-8ec9-087637103664" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/media/students/12660565938400e88af7ff8b71a49401.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/students/812b35eaa4f796c309e8378b9092ea14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/media/students/fc25eada9ba5c276dd4e7ccdd62b3860.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StudentController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609222650815</updated>
-      <workItem from="1609222652239" duration="27985000" />
+      <workItem from="1609222652239" duration="29763000" />
     </task>
     <servers />
   </component>

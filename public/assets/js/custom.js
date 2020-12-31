@@ -44,7 +44,10 @@
                     processData : false,
                     data : new FormData(this),
                     success : function (data){
-                       alert(data);
+
+                        $('.mess').html('<p class="alert alert-success">Student Added Successful <button class="close" data-dismiss = "alert">&times;</button></p>')
+                        $('form#add_student_form')[0].reset();
+                        $('img#student_photo_preview').attr('src','');
                     }
 
 
