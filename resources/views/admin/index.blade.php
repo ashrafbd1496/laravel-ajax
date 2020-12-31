@@ -53,7 +53,7 @@
 		</div>
 	</div>
 
-
+{{--add New Student Modal--}}
     <div id="add_student_modal" class="modal fade">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -62,23 +62,25 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
+                    <div class="mess"></div>
+                    <form id="add_student_form" action="" method="post" enctype="multipart/form-data">
+                        @csrf
 
-                    <form action="" method="post" enctype="multipart/form-data">
                         <div class="form-group">
                             <label for="">Name</label>
-                            <input class="form-control" type="text">
+                            <input name="name" class="form-control" type="text">
                         </div>
                         <div class="form-group">
                             <label for="">Email</label>
-                            <input class="form-control" type="text">
+                            <input name="email" class="form-control" type="text">
                         </div>
                         <div class="form-group">
                             <label for="">Cell</label>
-                            <input class="form-control" type="text">
+                            <input name="cell" class="form-control" type="text">
                         </div>
                         <div class="form-group">
                             <label for="">Roll</label>
-                            <input class="form-control" type="text">
+                            <input name="roll" class="form-control" type="text">
                         </div>
                         <div class="form-group">
                             <img id="student_photo_preview"  src=""  alt="">
