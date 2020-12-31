@@ -24,13 +24,31 @@
             let roll = $('form#add_student_form input[name="roll"]').val();
             let email = $('form#add_student_form input[name="email"]').val();
             let cell = $('form#add_student_form input[name="cell"]').val();
-            let photo = $('form#add_student_form input[name="photo"]').val();
+
 
             if (name == '' || roll =='' || cell=='' || email==''){
                 $('.mess').html('<p class="alert alert-danger">All fields are required ! <button class="close" data-dismiss = "alert">&times;</button></p>')
-            }else if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) == false) {
+            }
+
+            else if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email) == false) {
 
                 $('.mess').html('<p class="alert alert-danger">Invalid Email  ! <button class="close" data-dismiss = "alert">&times;</button></p>')
+            }
+
+            else {
+
+                $.ajax({
+                    url : 'student-create',
+                    method : "POST",
+                    contentType : false,
+                    processData : false,
+                    data : new FormData(this),
+                    success : function (data){
+                       alert(data);
+                    }
+
+
+                });
             }
 
 

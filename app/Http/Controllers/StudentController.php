@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Student;
 use Illuminate\Http\Request;
 
 class StudentController extends Controller
@@ -34,6 +35,23 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
+        if ($request->hasFile('photo')){
+
+            $img = $request->file('photo');
+            $unique_name = md5(time().rand()).'.'. $img->getClientOriginalExtension();
+            $img -> move(public_path('media/students'), $unique_name);
+        }
+
+
+      Student::create([
+
+          'name'    =>$request->name,
+          'roll'    =>$request->roll,
+          'cell'    =>$request->cell,
+          'email'   =>$request->email,
+          'photo'   =>$unique_name,
+
+      ]);
 
     }
 

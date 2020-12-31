@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Development Area</title>
+	<title>Student Laravel Ajaxify</title>
 	<!-- ALL CSS FILES  -->
 	<link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
 	<link rel="stylesheet" href="{{asset('assets/css/font-awesome.min.css')}}">
@@ -53,7 +53,7 @@
 		</div>
 	</div>
 
-{{--add New Student Modal--}}
+
     <div id="add_student_modal" class="modal fade">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -63,7 +63,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="mess"></div>
-                    <form id="add_student_form" action="" method="post" enctype="multipart/form-data">
+                    <form id="add_student_form" action="" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="form-group">
@@ -84,7 +84,7 @@
                         </div>
                         <div class="form-group">
                             <img id="student_photo_preview"  src=""  alt="">
-                            <input style="display: none;" class="form-control" type="file" id="student_photo">
+                            <input name="photo" style="display: none;" class="form-control" type="file" id="student_photo">
                             <label style="font-size: 20px;cursor: pointer" for="student_photo"><i class="fa fa-camera"></i>
                             </label>
 
